@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy — Fantasy API Worker</title>
+<style>
+  :root { color-scheme: light dark; --fg:#16181d; --muted:#5c6370; --bg:#fdfdfc; --line:#e3e3e0; --link:#1f5fbf; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg:#e8e9ec; --muted:#9aa1ad; --bg:#16181d; --line:#2c3038; --link:#7fb0ff; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; padding:48px 16px 96px; background:var(--bg); color:var(--fg);
+         font:16px/1.65 ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif; }
+  main { max-width:44rem; margin:0 auto; }
+  h1 { font-size:1.7rem; line-height:1.25; margin:0 0 .3em; letter-spacing:-.01em; }
+  h2 { font-size:1.1rem; margin:2.1em 0 .5em; }
+  .updated { color:var(--muted); font-size:.9rem; margin:0 0 2em; }
+  a { color:var(--link); }
+  ul { padding-left:1.25rem; }
+  footer { margin-top:3rem; padding-top:1.25rem; border-top:1px solid var(--line);
+           color:var(--muted); font-size:.9rem; }
+  footer a { margin-right:1rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy policy</h1>
+  <p class="updated">Fantasy API Worker · last updated 21 September 2026</p>
+
+  <p>Fantasy API Worker is a private program run by one person on their own
+     computer, for their own use. It has no other users, no server, and no
+     operator other than its owner.</p>
+
+  <h2>Who this covers</h2>
+  <p>The only Google account the program ever touches is the owner's own account,
+     which is also the only account authorized to use it. If you are reading this
+     without being that person, the program holds no data about you.</p>
+
+  <h2>What the program accesses</h2>
+  <p>It requests two Gmail permissions, and uses each for one narrow purpose:</p>
+  <ul>
+    <li><strong>Send mail</strong> — to email a report from the owner's account to
+        that same account. The sender and the recipient are the same person.</li>
+    <li><strong>Read mail</strong> — only to verify its own sending. After it sends
+        a message, it looks up that specific message by the identifier Google
+        returned, confirms the message carries the Sent label, and compares the
+        sender, recipient, subject and body against what it meant to send. It also
+        reads the signed-in account's address and mailbox label list to confirm it
+        is operating on the intended account.</li>
+  </ul>
+  <p>It does not search, list, open, or store unrelated messages. It does not read
+     attachments, contacts, calendars, or drafts. It has no permission to modify or
+     delete mail, and it never sends to any third party.</p>
+
+  <h2>Where data is kept</h2>
+  <p>Everything the program produces or stores stays on the owner's own computer,
+     in a private folder readable only by the owner's user account. This includes
+     reports, email records, and the Google authorization token. Nothing is
+     uploaded to a hosted service belonging to the program, because no such
+     service exists.</p>
+
+  <h2>What is never done</h2>
+  <ul>
+    <li>No data is sold, rented, or shared with anyone.</li>
+    <li>No advertising, tracking, profiling, or analytics of any kind.</li>
+    <li>No Gmail data is used to train any machine-learning model.</li>
+    <li>No Gmail data is transferred to any other application or person.</li>
+  </ul>
+
+  <h2>How long data is kept</h2>
+  <p>Reports and delivery records remain on the owner's computer until the owner
+     removes them; the program includes a command that deletes old stored inputs.
+     The Google authorization can be withdrawn at any time from the account's
+     <a href="https://myaccount.google.com/permissions">third-party access</a>
+     settings, which immediately ends the program's access. Deleting the program's
+     private folder removes everything it has stored.</p>
+
+  <h2>This site</h2>
+  <p>These pages are static files hosted on GitHub Pages. They set no cookies and
+     run no scripts. GitHub may log ordinary web-server request information as
+     described in the
+     <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub
+     Privacy Statement</a>.</p>
+
+  <h2>Changes</h2>
+  <p>If the program's data handling changes, this page will be updated and the date
+     above revised.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy can go to the support address registered on the
+     application's Google consent screen, which is the owner's own email address.</p>
+
+  <footer>
+    <a href="index.html">Home</a>
+    <a href="terms.html">Terms of service</a>
+  </footer>
+</main>
+</body>
+</html>

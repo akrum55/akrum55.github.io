@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fantasy API Worker</title>
+<style>
+  :root { color-scheme: light dark; --fg:#16181d; --muted:#5c6370; --bg:#fdfdfc; --line:#e3e3e0; --link:#1f5fbf; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg:#e8e9ec; --muted:#9aa1ad; --bg:#16181d; --line:#2c3038; --link:#7fb0ff; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; padding:48px 16px 96px; background:var(--bg); color:var(--fg);
+         font:16px/1.65 ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif; }
+  main { max-width:44rem; margin:0 auto; }
+  h1 { font-size:1.9rem; line-height:1.2; margin:0 0 .4em; letter-spacing:-.01em; }
+  h2 { font-size:1.15rem; margin:2.2em 0 .5em; }
+  p, li { color:var(--fg); }
+  .lede { color:var(--muted); font-size:1.05rem; }
+  a { color:var(--link); }
+  ul { padding-left:1.25rem; }
+  footer { margin-top:3rem; padding-top:1.25rem; border-top:1px solid var(--line);
+           color:var(--muted); font-size:.9rem; }
+  footer a { margin-right:1rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Fantasy API Worker</h1>
+  <p class="lede">A personal, single-user tool that prepares fantasy football and
+     contest-research summaries and emails them to its owner.</p>
+
+  <h2>What it is</h2>
+  <p>Fantasy API Worker is a private program that runs locally on its owner's own
+     computer. It assembles fantasy sports information into a written report and
+     delivers that report by email to the same person who runs it.</p>
+  <p>It is not a product, a service, or a website. There is no sign-up, no account
+     to create, and no version hosted for anyone else. This page exists because
+     Google requires an application using Gmail authorization to publish a home
+     page, a privacy policy, and terms of service.</p>
+
+  <h2>What it does with Gmail</h2>
+  <ul>
+    <li>Sends report emails from the owner's Google account to that same account.</li>
+    <li>Confirms that a message it just sent actually appears in that account's
+        Sent mail, so a delivery is never recorded as successful without evidence.</li>
+  </ul>
+  <p>It does not browse the mailbox, read unrelated messages, or contact anyone else.</p>
+
+  <h2>Not advice</h2>
+  <p>Reports are informational. Nothing produced by this tool is financial,
+     wagering, or professional advice, and no outcome is guaranteed. The tool
+     places no bets, submits no contest entries, and performs no transactions.</p>
+
+  <footer>
+    <a href="privacy.html">Privacy policy</a>
+    <a href="terms.html">Terms of service</a>
+  </footer>
+</main>
+</body>
+</html>
