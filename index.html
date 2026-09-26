@@ -28,7 +28,8 @@
 <main>
   <h1>Fantasy API Worker</h1>
   <p class="lede">A personal, single-user tool that prepares fantasy football and
-     contest-research summaries and emails them to its owner.</p>
+     contest-research summaries, and a monthly household rent summary, and emails
+     them to its owner.</p>
 
   <h2>What it is</h2>
   <p>Fantasy API Worker is a private program that runs locally on its owner's own
@@ -44,8 +45,15 @@
     <li>Sends report emails from the owner's Google account to that same account.</li>
     <li>Confirms that a message it just sent actually appears in that account's
         Sent mail, so a delivery is never recorded as successful without evidence.</li>
+    <li>Reads the one-time sign-in code the owner's apartment resident portal emails
+        to the owner, only right after the tool itself asked the portal for one.</li>
   </ul>
   <p>It does not browse the mailbox, read unrelated messages, or contact anyone else.</p>
+
+  <h2>What it does with Google Sheets</h2>
+  <p>It records each month's rent split in the owner's own rent spreadsheet (and a
+     private test copy it creates), then reads the figures back to check them. It
+     edits no other spreadsheet.</p>
 
   <h2>Not advice</h2>
   <p>Reports are informational. Nothing produced by this tool is financial,

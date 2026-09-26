@@ -26,7 +26,7 @@
 <body>
 <main>
   <h1>Privacy policy</h1>
-  <p class="updated">Fantasy API Worker · last updated 21 September 2026</p>
+  <p class="updated">Fantasy API Worker · last updated 26 September 2026</p>
 
   <p>Fantasy API Worker is a private program run by one person on their own
      computer, for their own use. It has no other users, no server, and no
@@ -38,7 +38,8 @@
      without being that person, the program holds no data about you.</p>
 
   <h2>What the program accesses</h2>
-  <p>It requests two Gmail permissions, and uses each for one narrow purpose:</p>
+  <p>It requests two Gmail permissions and one Google Sheets permission, and uses
+     each for a narrow purpose:</p>
   <ul>
     <li><strong>Send mail</strong> — to email a report from the owner's account to
         that same account. The sender and the recipient are the same person.</li>
@@ -47,16 +48,27 @@
         returned, confirms the message carries the Sent label, and compares the
         sender, recipient, subject and body against what it meant to send. It also
         reads the signed-in account's address and mailbox label list to confirm it
-        is operating on the intended account.</li>
+        is operating on the intended account.<br>
+        The one other use: the owner's apartment resident portal signs in with a
+        one-time code sent by email. When the program has just asked that portal for
+        a code, it searches for that portal's code message received after its own
+        request, reads that one message to take the code, and enters it on the
+        portal's own sign-in page. The code is used once and not stored.</li>
+    <li><strong>Google Sheets</strong> — to record each month's household rent
+        split in the owner's own rent spreadsheet, and in a private test copy it
+        creates in the owner's account, and to read those figures back to check
+        them. It opens no other spreadsheet. It also reads the signed-in account's
+        email address to confirm it is the intended account.</li>
   </ul>
-  <p>It does not search, list, open, or store unrelated messages. It does not read
-     attachments, contacts, calendars, or drafts. It has no permission to modify or
-     delete mail, and it never sends to any third party.</p>
+  <p>Apart from the sign-in code message described above, it does not search, list,
+     open, or store messages. It does not read attachments, contacts, calendars, or
+     drafts. It has no permission to modify or delete mail, and it never sends to
+     any third party.</p>
 
   <h2>Where data is kept</h2>
   <p>Everything the program produces or stores stays on the owner's own computer,
      in a private folder readable only by the owner's user account. This includes
-     reports, email records, and the Google authorization token. Nothing is
+     reports, rent records, email records, and the Google authorization tokens. Nothing is
      uploaded to a hosted service belonging to the program, because no such
      service exists.</p>
 
@@ -69,7 +81,7 @@
   </ul>
 
   <h2>How long data is kept</h2>
-  <p>Reports and delivery records remain on the owner's computer until the owner
+  <p>Reports, rent records and delivery records remain on the owner's computer until the owner
      removes them; the program includes a command that deletes old stored inputs.
      The Google authorization can be withdrawn at any time from the account's
      <a href="https://myaccount.google.com/permissions">third-party access</a>
