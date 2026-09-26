@@ -49,18 +49,18 @@
         sender, recipient, subject and body against what it meant to send. It also
         reads the signed-in account's address and mailbox label list to confirm it
         is operating on the intended account.<br>
-        The one other use: the owner's apartment resident portal signs in with a
-        one-time code sent by email. When the program has just asked that portal for
-        a code, it searches for that portal's code message received after its own
-        request, reads that one message to take the code, and enters it on the
-        portal's own sign-in page. The code is used once and not stored.</li>
+        The one other use: the owner's apartment community emails its monthly
+        statement through its billing company. The program searches for those
+        statement messages, confirms each came from that billing company, reads
+        the attached statement to take that month's charges, and keeps a private
+        copy of the statement on the owner's computer.</li>
     <li><strong>Google Sheets</strong> — to record each month's household rent
         split in the owner's own rent spreadsheet, and in a private test copy it
         creates in the owner's account, and to read those figures back to check
         them. It opens no other spreadsheet. It also reads the signed-in account's
         email address to confirm it is the intended account.</li>
   </ul>
-  <p>Apart from the sign-in code message described above, it does not search, list,
+  <p>Apart from the statement messages described above, it does not search, list,
      open, or store messages. It does not read attachments, contacts, calendars, or
      drafts. It has no permission to modify or delete mail, and it never sends to
      any third party.</p>
